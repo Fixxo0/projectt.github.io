@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <link rel="stylesheet" href="../public/agecalc/percentage.css"> -->
+    <!-- <link rel="stylesheet" href="tailwind.css"> -->
+    <link rel="stylesheet" href="../dist/public/style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <title>Document</title>
+    
+</head>
+<body>
+    <div>
+    <h1 class="mt-10 ">P</h1>
+    <!-- value -->
+    <div class="first">
+    <p ><span class="text">Value</span> <input  class="marks" type="text" name="MarkSecured" id="value1"></p>
+
+     <!-- total -->
+    <p><span class="text" >Out Of</span> <input class="totall" type="text" name="Total" id="value2"></p>
+  </div>
+
+     <!-- button -->
+    <button class="border" onclick="persent()" >Calculate</button>
+
+      <!-- Percentage -->
+    <input class="border" type="text" name="Percentage" id="ans">
+
+    <p>pp</p>
+
+      <!-- value -->
+    <p><span>%</span><input  class="Percentage" type="text" name="MarkSecured" id="value3"></p>
+
+    <!-- persentage -->
+   <p><span >Out Of</span> <input class="full" type="text" name="Totall" id="value4"></p>
+   <button class="secondBtn" onclick="val()" >Calculate</button>
+     <!-- PERSENTAGE OF -->
+   <input class="answer" type="text"  id="anserrr">
+
+
+<script> 
+ 
+ function persent(){
+   let num1 = document.getElementById('value1').value;
+   let num2 = document.getElementById('value2').value;
+   document.getElementById('ans').value = (num1/num2)*100+"%";
+}  
+  function val(){
+      let num3 = document.getElementById('value3').value;
+      let num4 = document.getElementById('value4').value;
+      document.getElementById('anserrr').value= (num3/100)*num4;
+  }
+
+   
+   
+</script>
+
+    </div>
+</body>
+</html>

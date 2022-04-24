@@ -1,0 +1,19 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "tailwindcss build ./src/style.css -o ./public/tailwind.css"
+  },
+  "keywords": [],
+  "author": "FixxoO",
+  "license": "ISC",
+  "description": "WEbSITE devlopment for Bose Last Year Project",
+  "dependencies": {
+    "autoprefixer": "^10.4.4",
+    "live-server": "^1.2.1"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.0.24"
+  }
+}
