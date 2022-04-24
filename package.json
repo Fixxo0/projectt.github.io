@@ -1,9 +1,8 @@
 {
   "name": "project",
   "version": "1.0.0",
-  "main": "index.js",
   "scripts": {
-    "build-css": "tailwindcss build ./src/style.css -o ./public/tailwind.css"
+    "build-css": "tailwindcss build ./style.css -o ./tailwind.css"
   },
   "keywords": [],
   "author": "FixxoO",
